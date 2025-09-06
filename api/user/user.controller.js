@@ -1,7 +1,7 @@
-import { doctorModel } from "../../model/doctor.schema";
-import { patientModel } from "../../model/patient.schema";
-import { mappingModel } from "../../model/mapping.schema";
-import { HandleGenericAPIError } from "../../utils/controller.helper";
+const { doctorModel } = require("../../model/doctor.schema");
+const { patientModel } = require("../../model/patient.schema");
+const { mappingModel } = require("../../model/mapping.schema");
+const { HandleGenericAPIError } = require("../../utils/controller.helper");
 
 const assignDoctor = async (req, res, next) => {
   try {
